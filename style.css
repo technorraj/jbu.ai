@@ -1,0 +1,190 @@
+/* ----------- General Body & Font ----------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+/* ----------- Chatbox Container ----------- */
+.chatbox {
+    width: 90%;
+    max-width: 1200px;  /* Large width for desktop */
+    height: 80vh;
+    background: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* ----------- Messages Area ----------- */
+#messages {
+    flex-grow: 1;
+    padding: 16px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(to bottom, #1e1e1e, #2c2c2c);
+}
+
+/* ----------- Individual Messages ----------- */
+.message {
+    max-width: 65%; /* slightly smaller to look nice on large screens */
+    padding: 12px 16px;
+    border-radius: 20px;
+    word-wrap: break-word;
+    line-height: 1.5;
+    font-size: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: background 0.3s ease;
+}
+
+/* User Messages */
+.user {
+    background: #0a84ff;
+    color: #ffffff;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Bot Messages */
+.bot {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* ----------- Input Area ----------- */
+.input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #333;
+    background: #1f1f1f;
+}
+
+/* Input Field */
+input {
+    flex-grow: 1;
+    border: 1px solid #444;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 15px;
+    outline: none;
+    background: #2a2a2a;
+    color: #e0e0e0;
+    transition: border 0.2s ease, background 0.2s ease;
+}
+
+input:focus {
+    border-color: #0a84ff;
+    background: #2c2c2c;
+}
+
+/* Send Button */
+button {
+    margin-left: 10px;
+    background: #0a84ff;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: #006edc;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ----------- Responsive Design ----------- */
+@media (max-width: 1200px) {
+    .chatbox {
+        width: 95%;
+        max-width: 800px;
+    }
+    .message {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    .chatbox {
+        width: 95%;
+        max-width: 600px;
+    }
+    .message {
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    .chatbox {
+        height: 90vh;
+        width: 95%;
+        border-radius: 12px;
+    }
+
+    .message {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .chatbox {
+        height: 95vh;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #messages {
+        padding: 12px;
+    }
+
+    .message {
+        max-width: 80%;
+        font-size: 13px;
+    }
+
+    input {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
