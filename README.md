@@ -132,4 +132,4 @@ This project is **open-source** and free for **educational and non-commercial pu
 
 ## Snippet
 
-![Snippet](snippet.jpg "Demo")
+![Snippet](snippet.JPG "Demo")
