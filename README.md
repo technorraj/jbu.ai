@@ -52,14 +52,17 @@
 ---
 
 ## Project Structure
-
-jbu-ai/
+```text
+Jbu-ai/
 │
 ├── index.html # Frontend chat interface
-├── style.css # Chatbot styles
-├── chatbot.php # Main PHP chatbot logic
-├── config.php # API keys and configuration
-├── README.md 
+├── style.css # Styles for chat UI
+├── chatbot.php # Main chatbot logic in PHP
+├── config.php # API keys and configuration settings
+└── README.md # Project documentation
+```
+
+
 
 
 ---
