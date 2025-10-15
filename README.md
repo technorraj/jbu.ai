@@ -129,3 +129,7 @@ This project is **open-source** and free for **educational and non-commercial pu
 **Email:** technorlyrics@gmail.com
 
 ---
+
+## Snippet
+
+![Snippet](snippet.jpg "Demo")
